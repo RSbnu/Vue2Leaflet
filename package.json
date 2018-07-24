@@ -9,8 +9,8 @@
     "size": "size-limit"
   },
   "main": "src/main.js",
-  "module": "dist/vue2-leaflet.min.js",
-  "unpkg": "dist/vue2-leaflet.min.js",
+  "module": "src/main.js",
+  "unpkg": "src/main.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/KoRiGaN/Vue2Leaflet.git"
