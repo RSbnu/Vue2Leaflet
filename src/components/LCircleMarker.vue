@@ -25,6 +25,10 @@ const props = {
     custom: true,
     default: true
   },
+  interactive: {
+    type: Boolean,
+    default: true
+  },
   stroke: {
     type: Boolean,
     custom: true,
@@ -114,7 +118,7 @@ export default {
     }
     const otherPropertytoInitialize = ["smoothFactor", "noClip", "stroke", "color", "weight",
       "opacity", "lineCap", "lineJoin", "dashArray", "dashOffset", "fill", "fillColor",
-      "fillOpacity", "fillRule", "className" ];
+      "fillOpacity", "fillRule", "className","interactive" ];
 
     for (var i = 0; i < otherPropertytoInitialize.length; i++) {
       const propName = otherPropertytoInitialize[i];
