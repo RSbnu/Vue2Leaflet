@@ -20,6 +20,7 @@ const props = {
   },
   maxBounds: {
     default: undefined,
+    custom: true,
   },
   zoom: {
     type: Number,
@@ -28,6 +29,7 @@ const props = {
   },
   minZoom: {
     type: Number,
+    custom: true,
     default: undefined,
   },
   maxZoom: {
@@ -181,7 +183,10 @@ export default {
       //this.movingRequest += 1;
       this.mapObject.setMaxBounds(newVal);
     },
-    setZoom(newVal , oldVal) {
+    setMinZoom(newvAL , oldVal){
+    this.mapObject.setMinZoom(newVal);
+    },
+    setZoom(newVal, oldVal) {
       this.movingRequest += 1;
       this.mapObject.setZoom(newVal);
     },
