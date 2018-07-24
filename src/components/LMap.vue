@@ -177,6 +177,10 @@ export default {
         this.mapObject.removeLayer(layer.mapObject);
       }
     },
+    setMaxBounds(newVal , oldVal) {
+      //this.movingRequest += 1;
+      this.mapObject.setMaxBounds(newVal);
+    },
     setZoom(newVal , oldVal) {
       this.movingRequest += 1;
       this.mapObject.setZoom(newVal);
