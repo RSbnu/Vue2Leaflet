@@ -181,6 +181,8 @@ export default {
     },
     setMaxBounds(newVal , oldVal) {
       //this.movingRequest += 1;
+      let bounds=L.latLngBounds(newVal);
+      bounds=L.latLngBounds([{lng:bounds.getNorth(),lat:bounds.getEast()},{lng:bounds.getSouth(),lat:bounds.getWest()}]);
       this.mapObject.setMaxBounds(newVal);
     },
     setMinZoom(newvAL , oldVal){
