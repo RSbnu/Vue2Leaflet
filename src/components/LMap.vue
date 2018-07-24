@@ -20,7 +20,6 @@ const props = {
   },
   maxBounds: {
     default: undefined,
-    custom: true,
   },
   zoom: {
     type: Number,
@@ -29,7 +28,6 @@ const props = {
   },
   minZoom: {
     type: Number,
-    custom: true,
     default: undefined,
   },
   maxZoom: {
@@ -179,16 +177,7 @@ export default {
         this.mapObject.removeLayer(layer.mapObject);
       }
     },
-    setMaxBounds(newVal , oldVal) {
-      //this.movingRequest += 1;
-      let bounds=L.latLngBounds(newVal);
-      bounds=L.latLngBounds([{lng:bounds.getNorth(),lat:bounds.getEast()},{lng:bounds.getSouth(),lat:bounds.getWest()}]);
-      this.mapObject.setMaxBounds(newVal);
-    },
-    setMinZoom(newvAL , oldVal){
-    this.mapObject.setMinZoom(newVal);
-    },
-    setZoom(newVal, oldVal) {
+    setZoom(newVal , oldVal) {
       this.movingRequest += 1;
       this.mapObject.setZoom(newVal);
     },
