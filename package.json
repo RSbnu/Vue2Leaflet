@@ -8,7 +8,7 @@
     "build": "cd scripts && ./build.sh",
     "size": "size-limit"
   },
-  "main": "dist/vue2-leaflet.min.js",
+  "main": "src/main.js",
   "module": "dist/vue2-leaflet.min.js",
   "unpkg": "dist/vue2-leaflet.min.js",
   "repository": {
